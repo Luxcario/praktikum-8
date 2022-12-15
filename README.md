@@ -150,6 +150,8 @@ def tambah(self,nim,nama,tugas,uts,uas):
 
 
 - Fungsi membuat method lihat() yaitu untuk menampilkan seluruh data yang sudah kita tambahkan tadi. Jika tidak ada data sama sekali, maka akan muncul tulisan TIDAK ADA DATA.
+- Ini tampilan jika kita melihat data:<br/>
+![ss.img](https://user-images.githubusercontent.com/116184002/207768393-f523e6e9-44bb-4cd5-b147-47bbb5f82eef.png)<br/>
 
 ~~~
 def lihat(self):
@@ -163,7 +165,10 @@ def lihat(self):
             print(f'{((self.tugas[i]*30/100) + (self.uts[i]*35/100) + (self.uas[i]*35/100)) :.2f}', " |")
 ~~~
 
-- Ini tampilan jika kita menginput method : Lihat()
+- Ini tampilan jika kita menginput method : tambah()<br/>
+![ss.img](https://user-images.githubusercontent.com/116184002/207768370-37f40cbb-a912-4610-89fa-0d8e69f7ad18.png)<br/>
+***Ini Tampilan ketika kita sudah menambah data***<br/>
+![ss.img](https://user-images.githubusercontent.com/116184002/207768395-57bc4bd7-215c-483a-a19f-4744fef0674a.png)<br/>
 
 - Fungsi membuat method ubah() yaitu untuk mengubah data. jika method ini diinput, maka data Nama, NIM, nilai tugas, nilai UTS, nilai UAS index nomor - (no) akan diubah sesuai dengan inputan dari user. Index ke - (no) akan dicari secara otomatis sesuai dengan nama yang ingin diubah oleh user.
 
@@ -176,7 +181,10 @@ def ubah(self,nim,nama,tugas,uts,uas):
         self.uas[no] = uas
 ~~~
 
-- Ini tampilan jika kita menginput method : Ubah()
+- Ini tampilan jika kita menginput method : Ubah()<br/>
+![ss.img](https://user-images.githubusercontent.com/116184002/207768399-32756d76-c4bd-4a6b-91c7-e962515fdf9e.png)<br/>
+***Ini tampilan ketika data sudah diubah***<br/>
+![ss.img](https://user-images.githubusercontent.com/116184002/207768402-9b4434d0-7992-41a2-9e37-50ff93dd2457.png)<br/>
 
 - Terakhir kita membuat method hapus(), yang berfungsi untuk menghapus data berdasarkan nama. Kita bisa menggunakan del untuk menghapus datanya. Seperti sebelumnya, nomor index list yang akan dihapus disesuaikan dengan inputan dari user. Yaitu index nomor ke - (no).
 
@@ -188,7 +196,8 @@ def hapus(self):
         del self.uts[no]
         del self.uas[no]
 ~~~
-- Ini tampilan jika kita menginput method : Hapus()
+- Ini tampilan jika kita menginput method : Hapus()<br/>
+![ss.img](https://user-images.githubusercontent.com/116184002/207768405-b08877e4-5580-4cdf-9c20-412997198517.png)<br/>
 
 # Diagram
 
